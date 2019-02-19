@@ -1,0 +1,30 @@
+
+# IDEA project files
+.idea/
+target/
+**/*.iml
+
+# ECLIPSE project files
+.classpath
+.project
+.settings/
+.springBeans
+
+# VS code
+.vscode
+
+# Build artifacts
+.gradle/
+gradle/
+out/
+build/
+bin/
+gradlew*
+
+# Misc files
+.DS_Store
+
+# Temporary files
+**/*.ipr
+**/*.iws
+**/*.log

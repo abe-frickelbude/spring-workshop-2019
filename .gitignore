@@ -1,0 +1,26 @@
+
+# IDEA project files
+.idea/
+target/
+**/*.iml
+
+# ECLIPSE project files
+.classpath
+.project
+.settings/
+.springBeans
+
+# VS code
+.vscode
+
+# Build artifacts
+target/
+src/main/resources/static/apidoc/
+
+# Misc files
+.DS_Store
+
+# Temporary files
+**/*.ipr
+**/*.iws
+**/*.log

@@ -1,0 +1,6 @@
+
+rootProject.name = 'spring-examples'
+
+include '01-minimal-application'
+include '02-di-basics'
+

@@ -1,0 +1,10 @@
+
+#### Sample SpringBoot application configuration file ####
+
+# See this link for defaults
+# https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+## possible values are "detect", "always", "never" -> "detect" aparrently doesn't work reliably on Windows
+spring.output.ansi.enabled: "always"
+
+

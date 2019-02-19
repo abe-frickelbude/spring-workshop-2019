@@ -1,0 +1,75 @@
+
+plugins {
+    id "org.springframework.boot" version "2.0.3.RELEASE"
+}
+
+ext {
+
+    groupId = 'de.tarent'
+    sourceLevel = "1.8"
+
+    // library versions
+    springBootVersion = '2.0.3.RELEASE'
+    commons_lang_version = '3.7'
+    commons_collections_version = '4.1'
+    commons_io_version = '2.6'
+    commons_math_version = '3.6.1'
+
+    cglib_nodep_version = '3.2.6'
+    spock_version = '1.1-groovy-2.4'
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: "org.springframework.boot"
+apply plugin: 'io.spring.dependency-management'
+
+/** Spring(Boot) specific section provided by io.spring.dependency-management plugin
+ This is similar to inheriting from e.g. spring-boot-starter-parent in Maven
+ */
+dependencyManagement {
+    imports {
+        mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+    }
+}
+
+dependencies {
+
+    def withoutCL = { exclude group: 'commons-logging', module: 'commons-logging' }
+
+    compile "org.apache.commons:commons-lang3:${commons_lang_version}"
+    compile "org.apache.commons:commons-collections4:${commons_collections_version}"
+
+    compile 'org.slf4j:jcl-over-slf4j'
+
+    compile "org.springframework.boot:spring-boot-starter", withoutCL
+
+    // ------------------------------ test dependencies ----------------------------------
+
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.11'
+    testCompile 'org.springframework.boot:spring-boot-starter-test', withoutCL
+    testCompile "org.spockframework:spock-spring:${spock_version}"
+    testCompile "cglib:cglib-nodep:${cglib_nodep_version}"
+}
+
+version = '1.0'
+group = "${groupId}"
+sourceCompatibility = "${sourceLevel}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
