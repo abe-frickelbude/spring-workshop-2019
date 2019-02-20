@@ -1,6 +1,6 @@
 
 <h3 class="chapter-number">05</h3>
-### Configuration 
+### Configuration
 
 ##### Code-based
 
@@ -23,7 +23,8 @@ public class ExampleConfiguration {
 ```
 
 Note:
-- Explain bean naming (default and manual)
-- Explain the importance of bean names
-- Explain @Primary 
-- Explain effect of bean names on injection and @Qualifier 
+
+* Explain bean naming (default and manual)
+* Explain the importance of bean names
+* Explain @Primary
+* Explain effect of bean names on injection and @Qualifier
