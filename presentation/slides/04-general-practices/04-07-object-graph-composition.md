@@ -8,14 +8,13 @@
 * Most components can be implemented as concrete classes
 * General guideline: prefer composition over inheritance
 
-
 Note:
 
-- Explain the example with multiple-interfaces-per-component implementation and
+* Explain the example with multiple-interfaces-per-component implementation and
 injection of said individual interfaces into other components
 
-- Use interfaces only if there is more than one implementation of a component 
+* Use interfaces only if there is more than one implementation of a component
 
-- Mention that Spring often also features deep class hierarchies 
-(some of them historical) which strictly speaking violate the 
+* Mention that Spring often also features deep class hierarchies
+(some of them historical) which strictly speaking violate the
 composition-over-inheritance principle

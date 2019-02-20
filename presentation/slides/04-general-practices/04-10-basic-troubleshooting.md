@@ -4,7 +4,7 @@
 
 ##### Troubleshooting
 
-So.... umm, Spring's throwing a tantrum... bummer... What now?!
+##### HELP!!!
 
 <img src="images/looney_toons_taz.png" alt="Angry Taz" class="float-right" />
 
@@ -15,6 +15,6 @@ So.... umm, Spring's throwing a tantrum... bummer... What now?!
 
 Note:
 
-- Explain some basic mistakes (e.g. injection of unknown / improperly configured dependencies)
-- Explain a typical cascading failure in DI (i.e. cannot inject a dependency
+* Explain some basic mistakes (e.g. injection of unknown / improperly configured dependencies)
+* Explain a typical cascading failure in DI (i.e. cannot inject a dependency
  because something IN it cannot be properly initialized)

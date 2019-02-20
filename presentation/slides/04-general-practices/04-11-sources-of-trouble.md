@@ -12,14 +12,11 @@
 
 Note:
 
-- Explain how to check component scan parameters
-
-- Explain how to resolve ambiguity in case of multiple DI candidates 
-(@Qualifier / @Primary)
-
-- SpringBoot specific: explain how default component scan will only
-find stuff relative to the base application class' package, so base
-application class should ideally reside in the top-level package
-
-- Explain @Value specifics
-- SpringBoot: explain default value pitfalls
+* Explain how to check component scan parameters
+* Explain how to resolve ambiguity in case of multiple DI candidates 
+  (@Qualifier / @Primary)
+* SpringBoot specific: explain how default component scan will only
+  find stuff relative to the base application class' package, so base
+  application class should ideally reside in the top-level package
+* Explain @Value specifics
+* SpringBoot: explain default value pitfalls

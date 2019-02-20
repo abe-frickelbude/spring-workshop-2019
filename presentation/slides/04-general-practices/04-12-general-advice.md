@@ -1,7 +1,7 @@
 <h3 class="chapter-number">04</h3>
 ### General practices
 
-##### Other useful bitz
+##### Tips
 
 * App context initialization is debuggable
 * Be aware of SpringAOP-enhanced classes (e.g. CGLIB proxies)
@@ -9,6 +9,6 @@
 
 Note:
 
-- Explain AOP pitfalls
-- Debugging into Spring's internals takes patience
-- Explain advantages of a local development mode
+* Explain AOP pitfalls
+* Debugging into Spring's internals takes patience
+* Explain advantages of a local development mode

@@ -11,11 +11,11 @@
 @Service
 public class SimpleService {
 
-  private AnotherComponent component;
+  private AnotherComponent component
 
   @Autowired
   public SimpleService(final AnotherComponent component) {
-    this.component = component;
+    this.component = component
   }
 }
 ```

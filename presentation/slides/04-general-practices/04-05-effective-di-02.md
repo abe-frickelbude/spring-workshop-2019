@@ -15,16 +15,18 @@ public class JacksonConfiguration {
     }
 }
 ```
-
 ```Java
 @Service
 public class DataSerializer  {
-    @Autowired
     private ObjectMapper mapper
+    @Autowired
+    public DataSerializer(final ObjectMapper mapper) {
+        this.mapper = mapper
+    }
 }
 ```
 
 Note:
-- Explain advantages of this approach
-- Configuration of a singleton can be conveniently centralized
 
+* Advantages of this approach
+* Configuration of a singleton can be conveniently centralized

@@ -1,6 +1,6 @@
 
 <h3 class="chapter-number">04</h3>
-### General practices 
+### General practices
 
 ##### Effective DI
 
@@ -19,8 +19,10 @@ public class DataSerializer {
 }
 ```
 
+###### BECOMES...
+
 Note:
 
-- Explain reasonable use of DI to avoid the statics mess
-- Explain that it is perfectly OK for a Singleton component to
+* Explain reasonable use of DI to avoid the statics mess
+* Explain that it is perfectly OK for a Singleton component to
 manage its own internal structure
