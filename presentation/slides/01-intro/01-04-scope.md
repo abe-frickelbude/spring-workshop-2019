@@ -5,7 +5,6 @@
 ##### Scope
 
 * Basics of Spring Framework
-* Spring Framework internals
 * General application design practices
 * Effective use of Spring facilities
 * Practical considerations, tips and tricks
@@ -21,5 +20,3 @@ Topics not discussed in this course:
 * Spring security
 * Spring / JEE compatibility
 * Not a live coding session, but examples are provided
-
-

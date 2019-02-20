@@ -1,6 +1,6 @@
 
 <h3 class="chapter-number">04</h3>
-### General practices 
+### General practices
 
 ##### Basics
 
@@ -11,9 +11,14 @@
 * Leverage DI
 
 Note:
-- Specific stereotypes help document a component's intent more clearly
-- Specific annotations also enable certain behind-the-scenes features (e.g. @Repository)
-- Let the app context do most of the heavy weightlifting
-- Leverage DI to
-- Reduce component construction / initialization overhead
-- Improve heap utilization and runtime performance
+
+* Specific stereotypes help document a component's intent more clearly
+* Specific annotations also enable certain behind-the-scenes features (e.g. @Repository)
+* Let the app context do most of the heavy weightlifting
+* Leverage DI to
+  * Reduce component construction / initialization overhead
+  * Improve heap utilization and runtime performance
+
+* Package structure
+  * Group configuration, services, controllers etc into packages
+  * A recommendation rather than a requirement

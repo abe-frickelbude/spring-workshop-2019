@@ -22,12 +22,9 @@ class FireAndForgetComponent { ... }
 
 Note:
 
-* Singleton 
- * Typically active during the entire lifecycle
- * Should be stateless (e.g. for thread safety reasons)
+* Singleton
+  * Typically active during the entire lifecycle
+  * Should be stateless (e.g. for thread safety reasons)
 
 * Prototype
- * Typical usage in e.g. a Web application on a per-http-request basis
-
-
-
+  * Typical usage in e.g. a Web application on a per-http-request basis

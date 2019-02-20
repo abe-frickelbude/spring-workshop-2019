@@ -7,7 +7,7 @@
 ```Java
 @Configuration 
 class ComponentConfiguration {
-
+  
   @Bean("custom")
   ExampleComponent component1() { ... }
 
@@ -18,15 +18,14 @@ class ComponentConfiguration {
 
 ```Java
 class ExampleService {
-
   @Autowired
   @Qualifier("custom")
   private ExampleComponent component
 }
-
 ```
 
 Note:
+
 * @Autowired injects dependencies
 * Beans can be named during definition
 * @Qualifier (in conjunction with @Autowired) specifies an concrete *named* dependency to be injected

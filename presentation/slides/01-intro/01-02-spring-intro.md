@@ -10,14 +10,13 @@
 
 Note:
 
-- Tell about likely use cases
-- Tell a few pros and cons
-- Tell how Spring focuses on minimizing boilerplate code
+* Tell about likely use cases
+* Tell a few pros and cons
+* Tell how Spring focuses on minimizing boilerplate code
 
 Spring is not:
- - minimalist
- - functionally driven
- - domain-driven
- - JEE application framework (but uses servlet API for WebMVC)
- - Glorified servlet container initializer
-   
+ * minimalist
+ * functionally driven
+ * domain-driven
+ * JEE application framework (but uses Servlet API for WebMVC)
+ * Glorified Servlet container initializer

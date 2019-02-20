@@ -16,6 +16,7 @@
 * commons-lang and commons-collections are generally included for best practice
 
 * Dependency configuration syntax example:
+  
     ```Groovy
         implementation( "org.springframework.boot:spring-boot-starter") {
             exclude group: 'commons-logging', module: 'commons-logging'

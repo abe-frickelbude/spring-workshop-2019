@@ -22,12 +22,8 @@ viewBox="0 0 4766 2276"
    <glyph unicode="L" horiz-adv-x="556"><path d="M72.9944 0l0 716.007 95.0109 0 0 -632.004 351.98 0 0 -84.0026 -446.99 0z"/></glyph>
    <glyph unicode="I" horiz-adv-x="277"><path d="M92.9793 0l0 716.007 95.0109 0 0 -716.007 -95.0109 0z"/></glyph>
    <glyph unicode="F" horiz-adv-x="610"><path d="M81.9896 0l0 716.017 483.045 0 0 -84.0418 -388.058 0 0 -223.004 336.07 0 0 -83.9441 -336.07 0 0 -325.027 -94.9868 0z"/></glyph>
-   <glyph unicode="v" horiz-adv-x="500"><path d="M207.833 0l-195.833 518.993 94.1604 0 111.027 -310.829c12.0004,-33.4971 23.1503,-68.3171 33.3081,-104.507 7.84277,27.3552 18.662,60.1909 32.8357,98.696l115.326 316.64 90.3336 0 -196.494 -518.993 -84.6641 0z"/></glyph>
-   <glyph unicode="e" horiz-adv-x="556"><path d="M420.013 168.005l90.995 -12.0004c-14.1737,-52.8206 -40.6784,-94.0187 -79.3253,-123.169 -38.6941,-29.1505 -88.0185,-43.8439 -148.162,-43.8439 -75.6874,0 -135.689,23.3393 -180.006,70.018 -44.3636,46.4897 -66.5218,111.972 -66.5218,196.164 0,86.9791 22.3472,154.682 67.1832,202.684 44.8361,48.1432 102.995,72.144 174.478,72.144 69.1675,0 125.673,-23.4811 169.517,-70.6794 43.8439,-47.1511 65.8131,-113.484 65.8131,-198.998 0,-5.14977 -0.141737,-12.9925 -0.472456,-23.3393l-386.516 0c3.35444,-56.8364 19.3234,-100.491 48.3322,-130.634 28.8198,-30.1899 65.0099,-45.3558 108.192,-45.3558 32.127,0 59.6239,8.5042 82.3018,25.5126 22.8669,17.0084 40.8674,44.1746 54.1907,81.4986zm-288.009 140.981l289.001 0c-3.82689,43.7022 -15.0241,76.3489 -33.1664,98.1763 -27.8276,33.8278 -64.1595,50.8362 -108.665,50.8362 -40.3477,0 -74.1756,-13.5122 -101.672,-40.4895 -27.3552,-27.0245 -42.521,-63.1673 -45.4975,-108.523z"/></glyph>
    <glyph unicode="T" horiz-adv-x="610"><path d="M259 0l0 632.004 -235.992 0 0 84.0026 566.994 0 0 -84.0026 -235.992 0 0 -632.004 -95.0109 0z"/></glyph>
    <glyph unicode="C" horiz-adv-x="722"><path d="M586.979 251.158l95.0109 -24.0008c-19.8431,-77.8135 -55.5136,-137.012 -107.011,-177.832 -51.4977,-40.8202 -114.476,-61.3248 -188.982,-61.3248 -77.0103,0 -139.658,15.6855 -187.99,47.1511 -48.3322,31.3711 -84.9948,76.8686 -110.177,136.351 -25.1819,59.6712 -37.8437,123.5 -37.8437,191.817 0,74.5063 14.1737,139.516 42.6628,195.03 28.5363,55.4663 69.0258,97.6566 121.516,126.476 52.4898,28.8198 110.318,43.1825 173.344,43.1825 71.6715,0 131.815,-18.1895 180.478,-54.6631 48.8519,-36.5208 82.8688,-87.6878 102.003,-153.69l-92.9793 -21.9692c-16.4887,51.9701 -40.6784,90.0028 -72.1913,113.626 -31.4656,23.859 -71.1518,35.6704 -118.964,35.6704 -54.8521,0 -100.869,-13.1343 -137.674,-39.4973 -36.8516,-26.3158 -62.8366,-61.7972 -77.6717,-106.161 -15.0241,-44.5053 -22.4889,-90.3336 -22.4889,-137.485 0,-60.8523 8.83492,-114.004 26.4575,-159.359 17.6698,-45.4975 45.1668,-79.3253 82.538,-101.814 37.324,-22.4889 77.6717,-33.6861 121.138,-33.6861 53.0095,0 97.6566,15.3548 134.366,45.8755 36.6626,30.6624 61.4665,75.9709 74.459,136.304z"/></glyph>
-   <glyph unicode="s" horiz-adv-x="500"><path d="M30.9931 155.013l87.0264 13.9847c4.81905,-34.82 18.473,-61.5137 40.8202,-80.1758 22.3472,-18.473 53.671,-27.8276 93.6407,-27.8276 40.5367,0 70.5377,8.17349 90.1918,24.6622 19.5124,16.347 29.3395,35.6704 29.3395,57.8286 0,19.8431 -8.83492,35.5287 -26.363,46.8676 -12.3311,7.79552 -42.332,17.6698 -90.0028,29.812 -64.3012,16.158 -108.807,30.1899 -133.799,42.0013 -24.8512,12.0004 -43.7022,28.3473 -56.5057,49.3244 -12.8508,20.8353 -19.3234,44.0329 -19.3234,69.3565 0,23.1503 5.33875,44.5053 15.8273,64.1595 10.6775,19.6542 24.9929,36.0011 43.1352,48.9937 13.7012,10.0161 32.3632,18.5203 55.8443,25.5126 23.67,6.99235 48.8519,10.4885 75.8292,10.4885 40.6784,0 76.3489,-5.81121 107.011,-17.6698 30.8514,-11.6697 53.482,-27.6859 68.1754,-47.6708 14.5044,-20.1739 24.6622,-47.0094 30.1427,-80.6482l-85.987 -12.0004c-3.82689,26.9772 -15.1658,48.1432 -33.8278,63.3091 -18.662,15.1658 -44.9778,22.6779 -79.1836,22.6779 -40.1587,0 -68.9786,-6.66163 -86.1287,-19.9849 -17.1974,-13.3705 -25.8433,-29.0088 -25.8433,-46.8676 0,-11.2917 3.49617,-21.6385 10.6775,-30.8041 7.13408,-9.35463 18.3313,-17.1974 33.6389,-23.3393 8.83492,-3.35444 34.4893,-10.8192 77.4828,-22.4889 62.0334,-16.536 105.358,-30.1899 130.02,-40.6784 24.6622,-10.4885 43.9856,-25.9851 58.0176,-46.0172 14.1737,-20.1739 21.166,-45.1668 21.166,-75.1677 0,-29.1505 -8.5042,-56.6475 -25.7016,-82.4908 -17.1501,-25.8433 -41.8123,-45.8282 -73.9866,-60.0019 -32.316,-14.1737 -68.8368,-21.166 -109.515,-21.166 -67.325,0 -118.823,13.9847 -154.162,41.8596 -35.2925,27.9694 -57.8286,69.3093 -67.6557,124.161z"/></glyph>
-   <glyph unicode="/" horiz-adv-x="277"><path d="M0 -12.0004l208.022 740.008 70.8211 0 -208.022 -740.008 -70.8211 0z"/></glyph>
    <glyph unicode="p" horiz-adv-x="556"><path d="M66.0021 -198.998l0 717.991 79.9868 0 0 -68.1754c18.851,26.363 40.1587,46.2062 64.0178,59.3405 23.67,13.1815 52.4898,19.8431 86.3177,19.8431 44.3636,0 83.3412,-11.3389 117.169,-34.1586 33.8278,-22.6779 59.3405,-54.8521 76.6796,-96.192 17.1501,-41.4816 25.8433,-86.8374 25.8433,-136.304 0,-52.8678 -9.49636,-100.491 -28.5363,-143.012 -18.9927,-42.332 -46.6314,-74.837 -82.9632,-97.5149 -36.1901,-22.4889 -74.3645,-33.8278 -114.334,-33.8278 -29.3395,0 -55.7025,6.18917 -78.8529,18.5203 -23.3393,12.3311 -42.332,27.8276 -57.3089,46.6314l0 -253.142 -88.0185 0zm79.9868 455.353c0,-66.5218 13.5122,-115.704 40.3477,-147.501 26.9772,-31.8435 59.6712,-47.8598 97.9873,-47.8598 39.0249,0 72.333,16.4887 100.019,49.5134 27.8276,32.9774 41.6706,84.0026 41.6706,153.17 0,66.0021 -13.5122,115.326 -40.6784,148.162 -27.1662,32.8357 -59.4822,49.1827 -97.1842,49.1827 -37.324,0 -70.3014,-17.5281 -98.9795,-52.3481 -28.8198,-35.009 -43.1825,-85.6562 -43.1825,-152.32z"/></glyph>
    <glyph unicode="N" horiz-adv-x="722"><path d="M76.0181 0l0 716.007 97.3259 0 375.65 -561.986 0 561.986 90.995 0 0 -716.007 -97.3259 0 -375.65 561.986 0 -561.986 -90.995 0z"/></glyph>
    <glyph unicode=")" horiz-adv-x="332"><path d="M124.02 -210.007l-63.0256 0c97.3259,156.194 145.989,312.53 145.989,469.007 0,61.183 -6.99235,121.846 -20.977,181.99 -11.0082,48.8519 -26.5048,95.6723 -46.3479,140.697 -12.6618,29.1505 -38.9776,78.0025 -78.6639,146.32l63.0256 0c60.994,-81.6876 106.161,-163.659 135.5,-246.008 24.9929,-70.8211 37.4657,-144.997 37.4657,-222.479 0,-87.8768 -16.8194,-172.872 -50.5055,-254.843 -33.4971,-82.0183 -74.3173,-153.501 -122.461,-214.684z"/></glyph>
@@ -76,182 +72,178 @@ viewBox="0 0 4766 2276"
    ]]>
   </style>
  </defs>
- <g id="spring_boot_internals">
+ <g id="spring_boot">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0 str0" x="3" y="3" width="4759" height="2270"/>
-  <rect class="fil1 str1" x="1346" y="859" width="853" height="558" rx="36" ry="76"/>
-  <g id="beans">
-   <circle class="fil2 str2" cx="386" cy="1721" r="55"/>
-   <circle class="fil2 str2" cx="541" cy="1783" r="55"/>
-   <circle class="fil2 str2" cx="726" cy="1718" r="55"/>
-   <circle class="fil2 str2" cx="651" cy="1929" r="55"/>
-   <circle class="fil2 str2" cx="424" cy="1934" r="55"/>
-   <rect class="fil3 str1" x="255" y="1585" width="681" height="453" rx="36" ry="15"/>
-   <circle class="fil2 str2" cx="826" cy="1860" r="55"/>
-  </g>
-  <g id="_850604160">
-   <rect class="fil4 str1" x="151" y="1035" width="889" height="155" rx="18" ry="18"/>
-   <text x="211" y="1142"  class="fil5 fnt0">CLASSPATH</text>
-   <text x="719" y="1142"  class="fil5 fnt0"> </text>
-   <text x="744" y="1142"  class="fil5 fnt0">SCAN</text>
-  </g>
-  <g id="_850606944">
-   <rect class="fil6 str1" x="73" y="112" width="1047" height="155" rx="21" ry="18"/>
-   <text x="131" y="219"  class="fil5 fnt0">SpringApplication main()</text>
-  </g>
-  <g id="_850609728">
-   <rect class="fil7 str1" x="151" y="641" width="889" height="155" rx="18" ry="18"/>
-   <text x="436" y="749"  class="fil5 fnt0">APP</text>
-   <text x="609" y="749"  class="fil5 fnt0"> </text>
-   <text x="633" y="749"  class="fil5 fnt0">INIT</text>
-  </g>
-  <g>
-   <path class="fil8" d="M591 591l0 -324 10 0 0 324 -10 0zm42 -5l-37 66 -37 -66 74 0z"/>
-  </g>
-  <g>
-   <path class="fil8" d="M591 974l0 -178 10 0 0 178 -10 0zm42 -5l-37 66 -37 -66 74 0z"/>
-  </g>
-  <g>
-   <rect class="fil0" x="2473" y="461" width="2247" height="1354"/>
-   <g id="component_scan">
-    <rect class="fil6 str3" x="2555" y="564" width="481.561" height="83.9031" rx="10" ry="10"/>
-    <text x="2569" y="624"  class="fil5 fnt1">COMPONENT</text>
-    <text x="2875" y="624"  class="fil5 fnt1"> </text>
-    <text x="2888" y="624"  class="fil5 fnt1">SCAN</text>
+  <g id="_253169664">
+   <rect class="fil0 str0" x="3" y="3" width="4759" height="2270"/>
+   <rect class="fil1 str1" x="1346" y="859" width="853" height="558" rx="36" ry="76"/>
+   <g id="beans">
+    <circle class="fil2 str2" cx="386" cy="1721" r="55"/>
+    <circle class="fil2 str2" cx="541" cy="1783" r="55"/>
+    <circle class="fil2 str2" cx="726" cy="1718" r="55"/>
+    <circle class="fil2 str2" cx="651" cy="1929" r="55"/>
+    <circle class="fil2 str2" cx="424" cy="1934" r="55"/>
+    <rect class="fil3 str1" x="255" y="1585" width="681" height="453" rx="36" ry="15"/>
+    <circle class="fil2 str2" cx="826" cy="1860" r="55"/>
    </g>
-   <rect class="fil3 str4" x="2524" y="528" width="2149" height="1239"/>
-   <g id="processor_stack">
-    <rect class="fil9 str3" x="3225" y="1045" width="315.869" height="98.7088" rx="13" ry="13"/>
-    <rect class="fil9 str3" x="3225" y="1218" width="315.869" height="98.7088" rx="13" ry="13"/>
-    <rect class="fil9 str3" x="3225" y="1423" width="315.869" height="98.7088" rx="13" ry="13"/>
-    <g id="_852056592">
+   <g>
+    <rect class="fil4 str1" x="151" y="1035" width="889" height="155" rx="18" ry="18"/>
+    <text x="211" y="1142"  class="fil5 fnt0">CLASSPATH</text>
+    <text x="719" y="1142"  class="fil5 fnt0"> </text>
+    <text x="744" y="1142"  class="fil5 fnt0">SCAN</text>
+   </g>
+   <g>
+    <rect class="fil6 str1" x="73" y="112" width="1047" height="155" rx="21" ry="18"/>
+    <text x="131" y="219"  class="fil5 fnt0">SpringApplication main()</text>
+   </g>
+   <g>
+    <rect class="fil7 str1" x="151" y="641" width="889" height="155" rx="18" ry="18"/>
+    <text x="436" y="749"  class="fil5 fnt0">APP</text>
+    <text x="609" y="749"  class="fil5 fnt0"> </text>
+    <text x="633" y="749"  class="fil5 fnt0">INIT</text>
+   </g>
+   <g>
+    <path class="fil8" d="M591 591l0 -324 10 0 0 324 -10 0zm42 -5l-37 66 -37 -66 74 0z"/>
+   </g>
+   <g>
+    <path class="fil8" d="M591 974l0 -178 10 0 0 178 -10 0zm42 -5l-37 66 -37 -66 74 0z"/>
+   </g>
+   <g>
+    <rect class="fil0" x="2473" y="461" width="2247" height="1354"/>
+    <g id="component_scan">
+     <rect class="fil6 str3" x="2555" y="564" width="481.561" height="83.9031" rx="10" ry="10"/>
+     <text x="2569" y="624"  class="fil5 fnt1">COMPONENT</text>
+     <text x="2875" y="624"  class="fil5 fnt1"> </text>
+     <text x="2888" y="624"  class="fil5 fnt1">SCAN</text>
+    </g>
+    <rect class="fil3 str4" x="2524" y="528" width="2149" height="1239"/>
+    <g id="processor_stack">
+     <rect class="fil9 str3" x="3225" y="1045" width="315.869" height="98.7088" rx="13" ry="13"/>
+     <rect class="fil9 str3" x="3225" y="1218" width="315.869" height="98.7088" rx="13" ry="13"/>
+     <rect class="fil9 str3" x="3225" y="1423" width="315.869" height="98.7088" rx="13" ry="13"/>
      <g>
-      <path class="fil8" d="M3381 1182l0 -38 4 0 0 38 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
+      <g>
+       <path class="fil8" d="M3381 1182l0 -38 4 0 0 38 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
+      </g>
      </g>
+     <g id="_748859136">
+      <g>
+       <path class="fil8" d="M3385 1325l-4 0 0 -8 4 0 0 8zm0 19l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm-2 39l-18 -36 36 0 -18 36z"/>
+      </g>
+     </g>
+    </g>
+    <g id="beans_0">
+     <circle class="fil2 str3" cx="2826" cy="929" r="30"/>
+     <circle class="fil2 str3" cx="2855" cy="1008" r="30"/>
+     <circle class="fil2 str3" cx="2937" cy="975" r="30"/>
+     <circle class="fil2 str3" cx="2914" cy="1087" r="30"/>
+     <circle class="fil2 str3" cx="2826" cy="1087" r="30"/>
+     <rect class="fil3 str3" x="2784" y="870" width="201" height="277" rx="11" ry="9"/>
+    </g>
+    <g id="beans_1">
+     <circle class="fil2 str3" cx="2826" cy="1388" r="30"/>
+     <circle class="fil2 str3" cx="2855" cy="1467" r="30"/>
+     <circle class="fil2 str3" cx="2937" cy="1434" r="30"/>
+     <circle class="fil2 str3" cx="2914" cy="1546" r="30"/>
+     <circle class="fil2 str3" cx="2826" cy="1546" r="30"/>
+     <rect class="fil3 str3" x="2784" y="1329" width="201" height="277" rx="11" ry="9"/>
+    </g>
+    <text x="2593" y="1020"  class="fil5 fnt1">BEANS</text>
+    <text x="2594" y="1476"  class="fil5 fnt1">OTHER</text>
+    <text x="2759" y="1476"  class="fil5 fnt1"> </text>
+    <text x="2594" y="1526"  class="fil5 fnt1">BEANS</text>
+    <g id="bean_def_registry">
+     <polygon class="fil10 str3" points="3300,643 3383,643 3467,643 3509,716 3550,788 3509,860 3467,933 3383,933 3300,933 3258,860 3216,788 3258,716 "/>
+     <text x="3281" y="768"  class="fil5 fnt2">BEAN</text>
+     <text x="3396" y="768"  class="fil5 fnt2"> </text>
+     <text x="3281" y="813"  class="fil5 fnt2">DEFINITION</text>
+     <text x="3281" y="858"  class="fil5 fnt2">REGISTY</text>
+    </g>
+    <text x="3222" y="1596"  class="fil5 fnt1">BEAN</text>
+    <text x="3350" y="1596"  class="fil5 fnt1"> </text>
+    <text x="3222" y="1647"  class="fil5 fnt1">DEFINITION</text>
+    <text x="3493" y="1647"  class="fil5 fnt1"> </text>
+    <text x="3222" y="1697"  class="fil5 fnt1">POST</text>
+    <text x="3348" y="1697"  class="fil5 fnt1">-</text>
+    <text x="3364" y="1697"  class="fil5 fnt1">PROCESSORS</text>
+    <text x="3806" y="1596"  class="fil5 fnt1">BEAN</text>
+    <text x="3934" y="1596"  class="fil5 fnt1"> </text>
+    <text x="3806" y="1647"  class="fil5 fnt1">POST</text>
+    <text x="3932" y="1647"  class="fil5 fnt1">-</text>
+    <text x="3947" y="1647"  class="fil5 fnt1">PROCESSORS</text>
+    <g>
+     <path class="fil8" d="M2883 834l0 -187 4 0 0 187 -4 0zm2 36l-18 -37 36 0 -18 37z"/>
     </g>
     <g>
-     <g>
-      <path class="fil8" d="M3385 1325l-4 0 0 -8 4 0 0 8zm0 19l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm-2 39l-18 -36 36 0 -18 36z"/>
-     </g>
+     <path class="fil8" d="M3150 824l0 -73 66 37 -66 36zm-26 -38l31 0 0 4 -31 0 -1 -4 1 0zm-1 0l0 0 1 0 -1 0zm-139 139l139 -139 3 3 -139 139 -3 -3z"/>
     </g>
-   </g>
-   <g id="beans_0">
-    <circle class="fil2 str3" cx="2826" cy="929" r="30"/>
-    <circle class="fil2 str3" cx="2855" cy="1008" r="30"/>
-    <circle class="fil2 str3" cx="2937" cy="975" r="30"/>
-    <circle class="fil2 str3" cx="2914" cy="1087" r="30"/>
-    <circle class="fil2 str3" cx="2826" cy="1087" r="30"/>
-    <rect class="fil3 str3" x="2784" y="870" width="201" height="277" rx="11" ry="9"/>
-   </g>
-   <g id="beans_1">
-    <circle class="fil2 str3" cx="2826" cy="1388" r="30"/>
-    <circle class="fil2 str3" cx="2855" cy="1467" r="30"/>
-    <circle class="fil2 str3" cx="2937" cy="1434" r="30"/>
-    <circle class="fil2 str3" cx="2914" cy="1546" r="30"/>
-    <circle class="fil2 str3" cx="2826" cy="1546" r="30"/>
-    <rect class="fil3 str3" x="2784" y="1329" width="201" height="277" rx="11" ry="9"/>
-   </g>
-   <text x="2593" y="1020"  class="fil5 fnt1">BEANS</text>
-   <text x="2594" y="1476"  class="fil5 fnt1">OTHER</text>
-   <text x="2759" y="1476"  class="fil5 fnt1"> </text>
-   <text x="2594" y="1526"  class="fil5 fnt1">BEANS</text>
-   <g id="bean_def_registry">
-    <polygon class="fil10 str3" points="3300,643 3383,643 3467,643 3509,716 3550,788 3509,860 3467,933 3383,933 3300,933 3258,860 3216,788 3258,716 "/>
-    <text x="3281" y="768"  class="fil5 fnt2">BEAN</text>
-    <text x="3396" y="768"  class="fil5 fnt2"> </text>
-    <text x="3281" y="813"  class="fil5 fnt2">DEFINITION</text>
-    <text x="3281" y="858"  class="fil5 fnt2">REGISTY</text>
-   </g>
-   <text x="3222" y="1596"  class="fil5 fnt1">BEAN</text>
-   <text x="3350" y="1596"  class="fil5 fnt1"> </text>
-   <text x="3222" y="1647"  class="fil5 fnt1">DEFINITION</text>
-   <text x="3493" y="1647"  class="fil5 fnt1"> </text>
-   <text x="3222" y="1697"  class="fil5 fnt1">POST</text>
-   <text x="3348" y="1697"  class="fil5 fnt1">-</text>
-   <text x="3364" y="1697"  class="fil5 fnt1">PROCESSORS</text>
-   <text x="3806" y="1596"  class="fil5 fnt1">BEAN</text>
-   <text x="3934" y="1596"  class="fil5 fnt1"> </text>
-   <text x="3806" y="1647"  class="fil5 fnt1">POST</text>
-   <text x="3932" y="1647"  class="fil5 fnt1">-</text>
-   <text x="3947" y="1647"  class="fil5 fnt1">PROCESSORS</text>
-   <g>
-    <path class="fil8" d="M2883 834l0 -187 4 0 0 187 -4 0zm2 36l-18 -37 36 0 -18 37z"/>
-   </g>
-   <g>
-    <path class="fil8" d="M3150 824l0 -73 66 37 -66 36zm-26 -38l31 0 0 4 -31 0 -1 -4 1 0zm-1 0l0 0 1 0 -1 0zm-139 139l139 -139 3 3 -139 139 -3 -3z"/>
-   </g>
-   <polyline class="fil3 str3" points="2985,1389 3118,1284 3118,810 3131,798 3180,798 "/>
-   <g>
-    <path class="fil8" d="M3381 1009l0 -76 4 0 0 76 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
-   </g>
-   <g>
-    <path class="fil8" d="M3609 1475l-68 0 0 -4 68 0 2 2 -2 2zm2 -2l0 2 -2 0 2 -2zm0 -542l0 542 -4 0 0 -542 3 -1 1 1zm-1 -1l1 0 0 1 -1 -1zm-75 -44l75 44 -2 3 -75 -43 2 -4zm-32 -16l40 3 -18 31 -22 -34z"/>
-   </g>
-   <g id="processor_stack_2">
-    <rect class="fil9 str3" x="3809" y="1045" width="315.869" height="98.7088" rx="13" ry="13"/>
-    <rect class="fil9 str3" x="3809" y="1218" width="315.869" height="98.7088" rx="13" ry="13"/>
-    <rect class="fil9 str3" x="3809" y="1423" width="315.869" height="98.7088" rx="13" ry="13"/>
+    <polyline class="fil3 str3" points="2985,1389 3118,1284 3118,810 3131,798 3180,798 "/>
     <g>
-     <g>
-      <path class="fil8" d="M3965 1182l0 -38 4 0 0 38 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
-     </g>
+     <path class="fil8" d="M3381 1009l0 -76 4 0 0 76 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
     </g>
     <g>
+     <path class="fil8" d="M3609 1475l-68 0 0 -4 68 0 2 2 -2 2zm2 -2l0 2 -2 0 2 -2zm0 -542l0 542 -4 0 0 -542 3 -1 1 1zm-1 -1l1 0 0 1 -1 -1zm-75 -44l75 44 -2 3 -75 -43 2 -4zm-32 -16l40 3 -18 31 -22 -34z"/>
+    </g>
+    <g id="processor_stack_2">
+     <rect class="fil9 str3" x="3809" y="1045" width="315.869" height="98.7088" rx="13" ry="13"/>
+     <rect class="fil9 str3" x="3809" y="1218" width="315.869" height="98.7088" rx="13" ry="13"/>
+     <rect class="fil9 str3" x="3809" y="1423" width="315.869" height="98.7088" rx="13" ry="13"/>
      <g>
-      <path class="fil8" d="M3969 1325l-4 0 0 -8 4 0 0 8zm0 19l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm-2 39l-18 -36 36 0 -18 36z"/>
+      <g>
+       <path class="fil8" d="M3965 1182l0 -38 4 0 0 38 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
+      </g>
+     </g>
+     <g>
+      <g>
+       <path class="fil8" d="M3969 1325l-4 0 0 -8 4 0 0 8zm0 19l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm0 20l-4 0 0 -8 4 0 0 8zm-2 39l-18 -36 36 0 -18 36z"/>
+      </g>
      </g>
     </g>
-   </g>
-   <g id="instantiation">
-    <rect class="fil10 str3" x="3809" y="735" width="316" height="106" rx="7" ry="7"/>
-    <text x="3789" y="676"  class="fil5 fnt1">INSTANTIATION</text>
+    <g id="instantiation">
+     <rect class="fil10 str3" x="3809" y="735" width="316" height="106" rx="7" ry="7"/>
+     <text x="3789" y="676"  class="fil5 fnt1">INSTANTIATION</text>
+    </g>
+    <g>
+     <path class="fil8" d="M3773 790l-223 0 0 -4 223 0 0 4zm36 -2l-36 18 0 -36 36 18z"/>
+    </g>
+    <g>
+     <path class="fil8" d="M3965 1009l0 -168 4 0 0 168 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
+    </g>
+    <g id="bean_registry">
+     <polygon class="fil11 str3" points="4378,1002 4462,1002 4546,1002 4587,1074 4629,1147 4587,1219 4546,1292 4462,1292 4378,1292 4337,1219 4295,1147 4337,1074 "/>
+     <text x="4381" y="1146"  class="fil5 fnt2">BEAN</text>
+     <text x="4496" y="1146"  class="fil5 fnt2"> </text>
+     <text x="4381" y="1191"  class="fil5 fnt2">REGISTY</text>
+    </g>
+    <g>
+     <path class="fil8" d="M4215 1475l-90 0 0 -4 90 0 2 2 -2 2zm2 -2l0 2 -2 0 2 -2zm0 -326l0 326 -4 0 0 -326 2 -2 2 2zm-4 0l0 -2 2 0 -2 2zm46 2l-44 0 0 -4 44 0 0 4zm36 -2l-36 18 0 -36 36 18z"/>
+    </g>
    </g>
    <g>
-    <path class="fil8" d="M3773 790l-223 0 0 -4 223 0 0 4zm36 -2l-36 18 0 -36 36 18z"/>
+    <path class="fil8" d="M591 1524l0 -334 10 0 0 334 -10 0zm42 -6l-37 67 -37 -67 74 0z"/>
+   </g>
+   <text x="1428" y="982"  class="fil5 fnt0">CONDITIONAL</text>
+   <text x="2025" y="982"  class="fil5 fnt0"> </text>
+   <text x="1428" y="1075"  class="fil5 fnt0">INIT</text>
+   <text x="1594" y="1075"  class="fil5 fnt0"> </text>
+   <text x="1618" y="1075"  class="fil5 fnt0">BASED</text>
+   <text x="1914" y="1075"  class="fil5 fnt0"> </text>
+   <text x="1939" y="1075"  class="fil5 fnt0">ON</text>
+   <text x="2068" y="1075"  class="fil5 fnt0"> </text>
+   <text x="1428" y="1168"  class="fil5 fnt0">USE</text>
+   <text x="1606" y="1168"  class="fil5 fnt0"> </text>
+   <text x="1631" y="1168"  class="fil5 fnt0">CASE</text>
+   <text x="1428" y="1261"  class="fil5 fnt0">AND</text>
+   <text x="1611" y="1261"  class="fil5 fnt0"> </text>
+   <text x="1635" y="1261"  class="fil5 fnt0">EXISTING</text>
+   <text x="2046" y="1261"  class="fil5 fnt0"> </text>
+   <text x="1428" y="1354"  class="fil5 fnt0">CONFIGURATION</text>
+   <g>
+    <path class="fil8" d="M1174 1816l-237 0 0 -10 237 0 5 5 -5 5zm5 -5l0 5 -5 0 5 -5zm0 -673l0 673 -10 0 0 -673 5 -5 5 5zm-10 0l0 -5 5 0 -5 5zm116 5l-111 0 0 -10 111 0 0 10zm-6 -41l67 36 -67 37 0 -73z"/>
    </g>
    <g>
-    <path class="fil8" d="M3965 1009l0 -168 4 0 0 168 -4 0zm2 36l-18 -36 36 0 -18 36z"/>
+    <path class="fil8" d="M2992 1265l-794 0 0 -20 794 0 7 17 -7 3zm7 -3l-3 3 -4 0 7 -3zm88 -88l-88 88 -14 -14 88 -88 17 7 -3 7zm3 -7l0 4 -3 3 3 -7zm0 -182l0 182 -20 0 0 -182 5 -8 15 8zm-20 0l0 -5 5 -3 -5 8zm153 -82l-138 91 -10 -17 137 -91 11 17zm36 -36l-28 49 -28 -42 56 -7z"/>
    </g>
-   <g id="bean_registry">
-    <polygon class="fil11 str3" points="4378,1002 4462,1002 4546,1002 4587,1074 4629,1147 4587,1219 4546,1292 4462,1292 4378,1292 4337,1219 4295,1147 4337,1074 "/>
-    <text x="4381" y="1146"  class="fil5 fnt2">BEAN</text>
-    <text x="4496" y="1146"  class="fil5 fnt2"> </text>
-    <text x="4381" y="1191"  class="fil5 fnt2">REGISTY</text>
-   </g>
-   <g>
-    <path class="fil8" d="M4215 1475l-90 0 0 -4 90 0 2 2 -2 2zm2 -2l0 2 -2 0 2 -2zm0 -326l0 326 -4 0 0 -326 2 -2 2 2zm-4 0l0 -2 2 0 -2 2zm46 2l-44 0 0 -4 44 0 0 4zm36 -2l-36 18 0 -36 36 18z"/>
-   </g>
-  </g>
-  <g>
-   <path class="fil8" d="M591 1524l0 -334 10 0 0 334 -10 0zm42 -6l-37 67 -37 -67 74 0z"/>
-  </g>
-  <text x="169" y="2196"  class="fil5 fnt0">META</text>
-  <text x="405" y="2196"  class="fil5 fnt0">-</text>
-  <text x="434" y="2196"  class="fil5 fnt0">INF</text>
-  <text x="576" y="2196"  class="fil5 fnt0">/services </text>
-  <text x="929" y="2196"  class="fil5 fnt0">SPI</text>
-  <text x="1071" y="2196"  class="fil5 fnt0">s</text>
-  <text x="1428" y="982"  class="fil5 fnt0">CONDITIONAL</text>
-  <text x="2025" y="982"  class="fil5 fnt0"> </text>
-  <text x="1428" y="1075"  class="fil5 fnt0">INIT</text>
-  <text x="1594" y="1075"  class="fil5 fnt0"> </text>
-  <text x="1618" y="1075"  class="fil5 fnt0">BASED</text>
-  <text x="1914" y="1075"  class="fil5 fnt0"> </text>
-  <text x="1939" y="1075"  class="fil5 fnt0">ON</text>
-  <text x="2068" y="1075"  class="fil5 fnt0"> </text>
-  <text x="1428" y="1168"  class="fil5 fnt0">USE</text>
-  <text x="1606" y="1168"  class="fil5 fnt0"> </text>
-  <text x="1631" y="1168"  class="fil5 fnt0">CASE</text>
-  <text x="1428" y="1261"  class="fil5 fnt0">AND</text>
-  <text x="1611" y="1261"  class="fil5 fnt0"> </text>
-  <text x="1635" y="1261"  class="fil5 fnt0">EXISTING</text>
-  <text x="2046" y="1261"  class="fil5 fnt0"> </text>
-  <text x="1428" y="1354"  class="fil5 fnt0">CONFIGURATION</text>
-  <g>
-   <path class="fil8" d="M1174 1816l-237 0 0 -10 237 0 5 5 -5 5zm5 -5l0 5 -5 0 5 -5zm0 -673l0 673 -10 0 0 -673 5 -5 5 5zm-10 0l0 -5 5 0 -5 5zm116 5l-111 0 0 -10 111 0 0 10zm-6 -41l67 36 -67 37 0 -73z"/>
-  </g>
-  <g>
-   <path class="fil8" d="M2992 1265l-794 0 0 -20 794 0 7 17 -7 3zm7 -3l-3 3 -4 0 7 -3zm88 -88l-88 88 -14 -14 88 -88 17 7 -3 7zm3 -7l0 4 -3 3 3 -7zm0 -182l0 182 -20 0 0 -182 5 -8 15 8zm-20 0l0 -5 5 -3 -5 8zm153 -82l-138 91 -10 -17 137 -91 11 17zm36 -36l-28 49 -28 -42 56 -7z"/>
   </g>
  </g>
 </svg>

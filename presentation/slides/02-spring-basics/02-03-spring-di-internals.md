@@ -17,5 +17,4 @@ Note:
   * BeanPostProcessors perform any specific initialization
   * DI and configuration are actually performed by specialized BeanPostProcessors
 5. The resulting configured bean references are stored in the bean registry
-6. The bean instance is returned by the context
-
+6. The bean instance is returned by the contexts

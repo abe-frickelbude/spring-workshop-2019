@@ -1,3 +1,5 @@
+# Outline
+
 ## Introduction
 
 * Short overview
@@ -13,9 +15,9 @@
 
 ## Effective Spring in real-world application design
 
-* Configuration and auto-configuration 
+* Configuration and auto-configuration
 * Comfortable application development using Spring(Boot) application profiles
-  * Local development   
+  * Local development
 * Alternative approaches to testing
   * Partial application contexts
   * Application context bootstrapping in a test
@@ -29,7 +31,7 @@
 
 * Constructor-based injection - is it really THAT evil?
 * Frequently encountered mistakes, faux-pas and anti-patterns
-* Some typical dogmas and their adverse effects on Spring application development 
+* Some typical dogmas and their adverse effects on Spring application development
 * First Aid Kit - what do I do when Spring starts bitchin' about something?
   * General troubleshooting
   * Typical DI mistakes
@@ -37,6 +39,5 @@
 
 ## Comparison to similar products
 
-* What use cases is Spring suited for? When to avoid Spring? 
+* What use cases is Spring suited for? When to avoid Spring?
 * Other DI containers
-

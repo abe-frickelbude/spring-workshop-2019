@@ -6,17 +6,17 @@
 
 * Application context serves as central "bean registry"
 * Strongly annotation-driven
-* Opinionated
 
 ```java
 @Service
-class SimpleService {
-  
-  @Autowired
-  private AnotherComponent component
+public class SimpleService {
 
-  @Value
-  private Integer configValue
+  private AnotherComponent component;
+
+  @Autowired
+  public SimpleService(final AnotherComponent component) {
+    this.component = component;
+  }
 }
 ```
 
@@ -25,7 +25,8 @@ Note:
 * Can transform component code to enhance / modify behavior
   * Powerful support for "cross cutting concerns"
   * Uses AOP / dynamic proxies
-
+  
+* Opinionated
 * Compatible with JSR-330 (javax.inject)
 * Internally based on reflection
   * Can dynamically scan packages for eligible components
