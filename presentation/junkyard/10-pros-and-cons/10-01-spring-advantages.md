@@ -14,4 +14,4 @@
 
 Note:
 
-- Explain the various advantages of Spring 
+* Explain the various advantages of Spring

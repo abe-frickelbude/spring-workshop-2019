@@ -10,15 +10,11 @@
 * Excessive overhead in case of very simple product requirements
 * Results in rather large binaries
 
-
 Note:
 
-- Not for beginners: explain why Spring requires prior technical experience
+* Not for beginners: explain why Spring requires prior technical experience
 (i.e. core framework difficult to comprehend at first glance etc.)
-
-- Magic: explain why it is not really the case (opinionated!)
-
-- Explain why in case of very simple implementations (e.g a microservice) the
+* Magic: explain why it is not really the case (opinionated!)
+* Explain why in case of very simple implementations (e.g a microservice) the
 overhead may be excessive
-
-- Explain when and when not to use Spring
+* Explain when and when not to use Spring

@@ -1,5 +1,5 @@
 
-<h3 class="chapter-number">06</h3>
+<h3 class="chapter-number">09</h3>
 ### Application profiles
 
 ##### YAML Configuration

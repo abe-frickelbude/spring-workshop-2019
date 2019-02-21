@@ -4,7 +4,7 @@
 
 ##### Partial application contexts
 
-* Useful for isolating component tests 
+* Useful for isolating component tests
 * Useful for avoiding full app initialization
 * Can improve test execution performance
 

@@ -1,5 +1,5 @@
 
-<h3 class="chapter-number">06</h3>
+<h3 class="chapter-number">09</h3>
 ### Application profiles
 
 ##### Profile-dependent context initialization
@@ -21,6 +21,6 @@ public class DevOnlyComponent { ... }
 
 Note:
 
-- Explain profiles 
-- Explain default profile
-- Explain use case for local development
+* Explain profiles
+* Explain default profile
+* Explain use case for local development
