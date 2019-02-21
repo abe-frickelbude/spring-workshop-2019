@@ -31,3 +31,4 @@ Note:
 * @Qualifier (in conjunction with @Autowired) specifies an concrete *named* dependency to be injected
 * @Primary (in @Bean / component definitions) defines the primary component instance
   * This is the one injected by @Autowired in absence of a @Qualifier if multiple candidates exist
+* Stick to one set of annotations (i.e. either JSR-330 or Spring-specific), do not mix these!

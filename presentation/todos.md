@@ -4,6 +4,7 @@
 * Use JUnit for tests
 * User Gradle for build
 * Tests & stuff @the end of presentation (if schedule allows)
+* App profiles @the end of presentation
 * Kick constructor injection chapter
 * Kick / reduce pros&cons + alternatives chapters
 

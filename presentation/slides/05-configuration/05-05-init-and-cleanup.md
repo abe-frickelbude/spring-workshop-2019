@@ -1,6 +1,6 @@
 
 <h3 class="chapter-number">05</h3>
-### Configuration 
+### Configuration
 
 ##### Component initialization and cleanup
 
@@ -22,7 +22,6 @@ class BadMoonService {
 
 Note:
 
-- Explain how these methods can also be private -> prevents exposure of implementation 
+* Explain how these methods can also be private -> prevents exposure of implementation
 details into the component's API
-
-- Example
+* Example
