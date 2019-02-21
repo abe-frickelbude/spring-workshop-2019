@@ -26,5 +26,6 @@ class ConfusedOrkTest {
 ```
 
 Note:
- - Explain basic usage and show examples
- - (Touch on constructor injection issues here? or later?)
+
+* Explain basic usage and show examples
+* (Touch on constructor injection issues here? or later?)

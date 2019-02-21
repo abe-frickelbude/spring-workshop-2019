@@ -28,7 +28,7 @@ class CustomComponentTest { ... }
 
 Note:
 
-- Explain advantages of partial context w.r.t to problematic init of PROD-only code
-- Show an example of a partial test context (i.e. in EbonService)
-- Show how to use
-- Explain pros/cons
+* Explain advantages of partial context w.r.t to problematic init of PROD-only code
+* Show an example of a partial test context (i.e. in EbonService)
+* Show how to use
+* Explain pros/cons

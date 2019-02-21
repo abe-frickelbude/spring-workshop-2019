@@ -2,23 +2,22 @@
 <h3 class="chapter-number">05</h3>
 ### Configuration
 
-##### Code-based
+##### Example
 
 ```Java
 @Configuration
 public class ExampleConfiguration {
-
     @Autowired
-    private AnotherMek anotherMek
+    private SimpleService service
 
     @Value
-    private String mekName
+    private String appName
 
-    @Bean("mek")
-    public Mek mek() { ... }
+    @Bean("anotherService")
+    public AnotherService anotherService() { ... }
 
-    @Bean("BigMek")
-    public BigMek bigMek() { ... }
+    @Bean("customService")
+    public YetAnotherService yetAnotherService() { ... }
 }
 ```
 

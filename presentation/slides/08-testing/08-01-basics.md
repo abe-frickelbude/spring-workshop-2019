@@ -25,5 +25,5 @@ class AccountServiceTest {
 
 Note:
 
-- Show an example of Spring-enabled test
-- Explain difference to @SpringBootTest - what are the specifics?
+* Show an example of Spring-enabled test
+* Explain difference to @SpringBootTest - what are the specifics?

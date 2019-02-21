@@ -23,8 +23,7 @@ class SelfContainedTest {
 }
 ```
 
-
 Note:
 
-- Explain how a test can bootstrap its own configuration
-- Show an example of a self-contained test
+* Explain how a test can bootstrap its own configuration
+* Show an example of a self-contained test

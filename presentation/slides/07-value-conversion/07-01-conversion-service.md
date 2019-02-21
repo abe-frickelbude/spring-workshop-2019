@@ -15,7 +15,7 @@ config.fixed.ids = "1,3,45,65,89,112"
 public class ComplexService {
     ...
     @Value("${config.fixed.ids}")
-    private Set<Integer> fixedIds
+    private List<Integer> fixedIds
 }
 ```
 
@@ -24,7 +24,7 @@ public class ComplexService {
 public UserAccount getUserAccount(@PathParam("id") Long id) {...}
 ```
 
-
 Note:
-- Explain how the central ConversionService assists in transforming values
-- Show an example of ConversionService custom converter integration
+
+* Explain how the central ConversionService assists in transforming values
+* Show an example of ConversionService custom converter integration
