@@ -10,13 +10,10 @@
 * DI still works, so we don't have to simulate it
 * Best of both worlds: mock DI dependencies before injection
 
-
 Note:
 
-- Explain how retaining the DI capabilities simplifies test development
-
-- Explain how careful configuration can help approach the controlled 
+* Explain how retaining the DI capabilities simplifies test development
+* Explain how careful configuration can help approach the controlled 
 conditions of a "real" unit test
-
-- Explain why this alternative approach does not significantly detract
+* Explain why this alternative approach does not significantly detract
 from the quality of the tests

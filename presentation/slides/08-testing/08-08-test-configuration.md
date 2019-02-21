@@ -8,19 +8,20 @@
 * SpringBoot supports a separate application.yml out-of-the-box
 * Can provide additional configuration classes if desired
 
-```Groovy
+```Java
 @ContextConfiguration
-@SpringBootTest(classes = [
-    TestConfiguration.class, 
-    CustomConfiguration.class, 
+@SpringBootTest(classes = {
+    TestConfiguration.class,
+    CustomConfiguration.class,
     ExtraConfiguration.class
-])
-class CustomConfiguredSpec {
+})
+class CustomConfiguredTest {
 
 }
 ```
+
 Note:
 
-- Show an example
-- Explain custom helper classes and alternative component 
+* Show an example
+* Explain custom helper classes and alternative component 
 implementations created specifically for testing

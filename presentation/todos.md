@@ -3,6 +3,7 @@
 
 * Use JUnit for tests
 * User Gradle for build
+* Simplify test stuff and port to JUnit
 * Tests & stuff @the end of presentation (if schedule allows)
 * App profiles @the end of presentation
 * Kick constructor injection chapter
