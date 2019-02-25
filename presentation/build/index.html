@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Prez</title>
+
+    <meta name="description" content="-- DESCRIPTION HERE --">
+    <meta name="author" content="abe">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="css/highlight/styles/zenburn.css" id="highlight-theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides"><section id="cover" class="slide" data-has-notes="false">
+<section>
+
+    <img id="cover-logo" src="images/spring-logo-horizontal.png">
+    <h2>Effective Spring</h2>
+
+    <h4>A practical guide to the Spring Framework and writing effective Spring applications</h4>
+    <h6>Ibragim Kuliev, Tarent GmbH (2018-2019)</h6>
+
+    <section id="themes">
+        <h6>Theme</h6>
+        <a href="?theme=simple">Simple</a>
+        <a href="?theme=serif">Serif</a>
+        <a href="?theme=league">League</a>
+        <a href="?theme=sky">Sky</a>
+        <a href="?theme=solarized">Solarized</a>
+        <a href="?theme=night">Night</a>
+        <a href="?theme=black">Black</a>
+        <a href="?theme=white">White</a>
+        <a href="?theme=beige">Beige</a>
+        <a href="?theme=moon">Moon</a>
+        <a href="?theme=blood">Blood</a>
+    </section>
+
+    <!--speaker notes -->
+    <aside class="notes">
+        <p>Intro - describe Spring Framework!</p>
+    </aside>
+
+</section>
+</section>
+
+<section id="chapter-intro" class="chapter">
+<section id="intro-intro" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">01</h3></p>
+<h3>Intro</h3><h5>Overview</h5><ul>
+<li>Spring Framework introduction</li>
+<li>Walk through a typical Spring MVC application</li>
+<li>Accompanying code is available <a href="https://github.com/abe-frickelbude/spring-workshop-2019">on Github</a></li>
+</ul>
+<!-- Speaker notes --><aside class="notes"><ul>
+<li>Introduce Spring as product</li>
+<li>When and when not to use Spring?</li>
+<li>Name some pros and cons</li>
+<li>Leave enough time / room for Q&amp;A</li>
+<li>Allow Q&amp;A in-between</li>
+<li>Don&#39;t give into to pro/con discussions</li>
+<li>Intersperse theory with code examples</li>
+<li>Talk about anti-patterns / bad examples during a particular chapter, not after it</li>
+</ul></aside>
+</section>
+
+<section id="intro-spring-intro" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">01</h3></p>
+<h3>Intro</h3><h5>Spring Framework</h5><ul>
+<li>A framework for feature-rich, production-ready Java applications</li>
+</ul>
+<p><img src="images/spring_intro.svg" class="medium" /></p><aside class="notes"><ul>
+<li>Tell about likely use cases</li>
+<li>Tell a few pros and cons</li>
+<li>Tell how Spring focuses on minimizing boilerplate code</li>
+</ul>
+<p>Spring is not:</p>
+<ul>
+<li>minimalist</li>
+<li>functionally driven</li>
+<li>domain-driven</li>
+<li>JEE application framework (but uses Servlet API for WebMVC)</li>
+<li>Glorified Servlet container initializer</li>
+</ul></aside>
+</section>
+
+<section id="intro-prerequisites" class="slide" data-has-notes="false">
+<p><h3 class="chapter-number">01</h3></p>
+<h3>Intro</h3><h5>Prerequisites</h5><ul>
+<li>Intermediate-level course</li>
+<li>Working knowledge of Java 8 is required</li>
+<li>Basic knowledge of Groovy is a plus</li>
+</ul>
+</section>
+
+<section id="intro-scope" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">01</h3></p>
+<h3>Intro</h3><h5>Scope</h5><ul>
+<li>Basics of Spring Framework</li>
+<li>General application design practices</li>
+<li>Effective use of Spring facilities</li>
+<li>Practical considerations, tips and tricks</li>
+<li>Comparison with alternative products</li>
+</ul>
+<!-- Speaker notes --><aside class="notes"><p>Topics not discussed in this course:</p>
+<ul>
+<li>Specific Spring modules e.g. WebMvc, Data I/O etc</li>
+<li>WebFlux and reactive patterns</li>
+<li>Spring security</li>
+<li>Spring / JEE compatibility</li>
+<li>Not a live coding session, but examples are provided</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-spring-basics" class="chapter">
+<section id="spring-basics-chapter-cover" class="slide" data-has-notes="false">
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>02</h1>
+<h2>Spring Basics</h2>
+</section>
+
+<section id="spring-basics-dependency-injection" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">02</h3></p>
+<h3>Spring Basics</h3><h5>Dependency injection</h5><ul>
+<li>Also referred to as &quot;Inversion of Control&quot; (IOC)</li>
+<li>Or &quot;Context Dependency Injection&quot; (CDI) in JEE parlance</li>
+<li>Container manages object graphs</li>
+<li>An object and its dependencies are managed by the container</li>
+</ul><aside class="notes"><ul>
+<li>Container assumes responsibility for construction of object graphs</li>
+<li>Depending on scope, the container provides some form of lifecycle for managed beans</li>
+</ul></aside>
+</section>
+
+<section id="spring-basics-spring-di" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">02</h3></p>
+<h3>Spring Basics</h3><h5>Spring  DI implementation</h5><ul>
+<li>Application context serves as central &quot;bean registry&quot;</li>
+<li>Strongly annotation-driven</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleService</span> </span>{
+
+  <span class="hljs-keyword">private</span> AnotherComponent component
+
+  <span class="hljs-meta">@Autowired</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SimpleService</span><span class="hljs-params">(<span class="hljs-keyword">final</span> AnotherComponent component)</span> </span>{
+    <span class="hljs-keyword">this</span>.component = component
+  }
+}
+</code></pre><aside class="notes"><ul>
+<li><p>Can transform component code to enhance / modify behavior</p>
+<ul>
+<li>Powerful support for &quot;cross cutting concerns&quot;</li>
+<li>Uses AOP / dynamic proxies</li>
+</ul>
+</li>
+<li><p>Opinionated</p>
+</li>
+<li>Compatible with JSR-330 (javax.inject)</li>
+<li>Internally based on reflection<ul>
+<li>Can dynamically scan packages for eligible components</li>
+<li>Fairly high application start-up times</li>
+</ul>
+</li>
+</ul></aside>
+</section>
+
+<section id="spring-basics-spring-di-internals" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">02</h3></p>
+<h3>Spring Basics</h3><h5>Spring DI - how does it work?</h5><p><img src="images/spring_di_context_internals.svg" class="large"/></p><aside class="notes"><ol>
+<li>Component scan identifies bean candidates</li>
+<li>Beans are registered in app context<ul>
+<li>Explicitly configured beans are also added</li>
+</ul>
+</li>
+<li>BeanFactoryPostProcessors transform bean definitions as required</li>
+<li>When a bean instance is requested:<ul>
+<li>The app context&#39;s BeanFactory creates a bean</li>
+<li>BeanPostProcessors perform any specific initialization</li>
+<li>DI and configuration are actually performed by specialized BeanPostProcessors</li>
+</ul>
+</li>
+<li>The resulting configured bean references are stored in the bean registry</li>
+<li>The bean instance is returned by the contexts</li>
+</ol></aside>
+</section>
+
+<section id="spring-basics-di-annotations" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">02</h3></p>
+<h3>Spring Basics</h3><h5>DI annotations</h5><pre><code class="lang-Java"><span class="hljs-meta">@Configuration</span> 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ComponentConfiguration</span> </span>{
+
+  <span class="hljs-meta">@Bean</span>(<span class="hljs-string">"custom"</span>)
+  <span class="hljs-function">ExampleComponent <span class="hljs-title">component1</span><span class="hljs-params">()</span> </span>{ ... }
+
+  <span class="hljs-meta">@Bean</span>
+  <span class="hljs-function">ExampleComponent <span class="hljs-title">component2</span><span class="hljs-params">()</span> </span>{ ... }
+}
+</code></pre>
+<pre><code class="lang-Java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleService</span> </span>{
+  <span class="hljs-meta">@Autowired</span>
+  <span class="hljs-meta">@Qualifier</span>(<span class="hljs-string">"custom"</span>)
+  <span class="hljs-keyword">private</span> ExampleComponent component
+}
+</code></pre><aside class="notes"><ul>
+<li>@Autowired injects dependencies</li>
+<li>Beans can be named during definition</li>
+<li>@Qualifier (in conjunction with @Autowired) specifies an concrete <em>named</em> dependency to be injected</li>
+<li>@Primary (in @Bean / component definitions) defines the primary component instance<ul>
+<li>This is the one injected by @Autowired in absence of a @Qualifier if multiple candidates exist</li>
+</ul>
+</li>
+<li>Stick to one set of annotations (i.e. either JSR-330 or Spring-specific), do not mix these!</li>
+</ul></aside>
+</section>
+
+<section id="spring-basics-component-scopes" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">02</h3></p>
+<h3>Spring Basics</h3><h5>Common component scopes</h5><ul>
+<li>Singleton - only one instance of component per app context</li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Scope</span>(<span class="hljs-string">"singleton"</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingletonComponent</span> </span>{ ... }
+</code></pre>
+<ul>
+<li>Prototype - new instance created by the container as needed</li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Scope</span>(<span class="hljs-string">"prototype"</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FireAndForgetComponent</span> </span>{ ... }
+</code></pre><aside class="notes"><ul>
+<li><p>Singleton</p>
+<ul>
+<li>Typically active during the entire lifecycle</li>
+<li>Should be stateless (e.g. for thread safety reasons)</li>
+</ul>
+</li>
+<li><p>Prototype</p>
+<ul>
+<li>Typical usage in e.g. a Web application on a per-http-request basis</li>
+</ul>
+</li>
+</ul></aside>
+</section>
+
+<section id="spring-basics-more-di" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">02</h3></p>
+<h3>Spring Basics</h3><h5>Constructor-based DI</h5><pre><code class="lang-Java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyService</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Part1 part1 <span class="hljs-comment">// can now be immutable!</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Part2 part2 <span class="hljs-comment">// ditto</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Integer param
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title">MyService</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Part1 part1, <span class="hljs-keyword">final</span> Part2 part2,
+                    @Value(<span class="hljs-string">"${app.param}"</span>)</span> <span class="hljs-keyword">final</span> Integer param) </span>{
+        <span class="hljs-keyword">this</span>.part1 = part1
+        <span class="hljs-keyword">this</span>.part2 = part2
+        <span class="hljs-keyword">this</span>.param = param
+    }
+}
+</code></pre><aside class="notes"><ul>
+<li>Explain why immutability is useful in composition</li>
+<li>Explain other DI forms - how does constructor DI compare?</li>
+<li>Make a case for: &quot;Pick whichever method you consider the most appropriate and
+stick with it - don&#39;t mix different injection methods in your code&quot;</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-spring-boot" class="chapter">
+<section id="spring-boot-chapter-cover" class="slide" data-has-notes="false">
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>03</h1>
+<h2>Spring Boot</h2>
+</section>
+
+<section id="spring-boot-grinning-boot" class="slide" data-has-notes="false">
+<h3 class="chapter-number">03</h3>
+<br/>
+<h5 class="fragment fade-in">Ladies and gentlemen...allow me to introduce:</h5>
+<img src="images/spring_crazy_boot.svg" class="medium fragment fade-up" />
+</section>
+
+<section id="spring-boot-overview" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">03</h3></p>
+<h3>Spring Boot</h3><h5>Overview</h5><ul>
+<li>Add-on framework &quot;on top&quot; of Spring</li>
+<li>Reduces boilerplate code</li>
+<li>Enhanced configuration capabilities</li>
+<li>Convention-over-configuration  </li>
+<li>Many popular framework integrations</li>
+</ul><aside class="notes"><ul>
+<li>Based on existing Spring mechanisms</li>
+<li>Provides  out-of-the-box with minimal configuration effort</li>
+<li>Can be a rather unruly beast if approached in a naive manner!</li>
+<li>The short story here is <em>RTFM</em>, but bear with me - we&#39;ll look at how to tame the beast!</li>
+</ul></aside>
+</section>
+
+<section id="spring-boot-misconceptions" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">03</h3></p>
+<h3>Spring Boot</h3><h5>Basic facts</h5><ul>
+<li>SpringBoot is <strong>not</strong> a microservice framework</li>
+<li>SpringBoot is <strong>not</strong> a web application framework</li>
+<li>Understanding of core Spring concepts is required</li>
+<li>The ecosystem is under active development</li>
+</ul><aside class="notes"><ul>
+<li>SpringBoot  is build <em>upon</em> Spring - it is an <em>add-on</em></li>
+<li>It is entirely possible to design non-web / non-server applications using SpringBoot</li>
+<li>Documentation is already very comprehensive and fairly reliable<ul>
+<li>Implication: integration of third-party frameworks may be buggy or not feature-complete</li>
+</ul>
+</li>
+</ul></aside>
+</section>
+
+<section id="spring-boot-functionality" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">03</h3></p>
+<h3>Spring Boot</h3><h5>HOW DOES IT WORK?</h5><p><img src="images/spring_boot_internals.svg" class /></p><aside class="notes"><ul>
+<li>Predefined base application class (SpringApplication) provides core SpringBoot functionality</li>
+<li>Generic annotation-driven auto-configuration mechanism</li>
+<li>Uses specialized bean(factory) post-processing to automatically and intelligently specify beans
+required by a particular use case</li>
+<li>[Third-party] framework integration typically provided by a <em>*-starter&quot;</em> JAR dependency<ul>
+<li>e.g. spring-boot-web-starter for Spring WebMVC integration</li>
+</ul>
+</li>
+<li>In simple use cases, only requires a starter JAR and perhaps a few configuration annotations</li>
+</ul></aside>
+</section>
+
+<section id="spring-boot-configuration" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">03</h3></p>
+<h3>Spring Boot</h3><h5>Configuration</h5><ul>
+<li>Flexible YAML configuration not available in core Spring</li>
+<li>Flexible variable substitution</li>
+<li>Sensible default configuration values</li>
+<li>Support for process environment variables</li>
+</ul><aside class="notes"><ul>
+<li>ConfigurationProperties facility<ul>
+<li>Allows grouping of related configuration properties into POJOs</li>
+<li>Provides automatic property validation</li>
+<li>Allows multiple configuration profiles per YAML file</li>
+</ul>
+</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-general-practices" class="chapter">
+<section id="general-practices-chapter-cover" class="slide" data-has-notes="false">
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>04</h1>
+<h2>General practices</h2>
+</section>
+
+<section id="general-practices-basics" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Basics</h5><ul>
+<li>Use the app context effectively</li>
+<li>Configure components using annotations</li>
+<li>Use specific stereotype annotations (e.g. @Service)</li>
+<li>Use DI where ever appropriate / possible</li>
+<li>Stick to Spring&#39;s DI annotations</li>
+</ul><aside class="notes"><ul>
+<li>General<ul>
+<li>StackOverflow is a useful resource</li>
+</ul>
+</li>
+<li><p>Package structure</p>
+<ul>
+<li>Group configuration, services, controllers etc into packages</li>
+<li>A recommendation rather than a requirement</li>
+</ul>
+</li>
+<li><p>Specific stereotypes help document a component&#39;s intent more clearly</p>
+</li>
+<li>Specific annotations also enable certain behind-the-scenes features (e.g. @Repository)</li>
+<li><p>Let the app context do most of the heavy weightlifting</p>
+</li>
+<li><p>DI  </p>
+<ul>
+<li>There&#39;s nothing magical about DI - learn to use it effectively</li>
+<li>Exercise patience when reading Spring documentation</li>
+<li>do not mix with javax.inject</li>
+<li>DI can be used as glue between any components which are not static (i.e. in PermGen space)</li>
+<li>Leverage DI to<ul>
+<li>Reduce component construction / initialization overhead</li>
+<li>Improve heap utilization and runtime performance</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-di-faux-pas" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Dependency Injection Faux-pas</h5><pre><code class="lang-Java"><span class="hljs-meta">@Autowired</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BadHakz</span><span class="hljs-params">(Comp1 comp1, Comp2 comp2, 
+               @Value(<span class="hljs-string">"${params.param1}"</span>)</span> String param1) </span>{
+
+    <span class="hljs-keyword">this</span>.comp1 = Objects.requireNonNull(comp1, <span class="hljs-string">"comp1 can't be null!"</span>)
+    <span class="hljs-keyword">this</span>.comp2 = Objects.requireNonNull(comp2, <span class="hljs-string">"comp2 can't be null!"</span>)
+    <span class="hljs-keyword">this</span>.param1 = Objects.requireNonNull(param1, <span class="hljs-string">"param1 can't be null!"</span>)
+}
+</code></pre>
+<p><h6 class="callout-right">PFUI!</h6></p>
+<pre><code class="lang-Groovy"><span class="hljs-keyword">def</span> <span class="hljs-string">"Dependency injection works as expected"</span> () {
+    ...
+<span class="hljs-symbol">    when:</span>
+    <span class="hljs-keyword">def</span> hakz = BadHakz(mock1, <span class="hljs-literal">null</span>, <span class="hljs-string">"test"</span>)
+<span class="hljs-symbol">
+    then:</span>
+    thrown(NullPointerException ex)
+}
+</code></pre><aside class="notes"><ul>
+<li>Also explain why the interface-per-component mess is not necessary in general</li>
+<li>Make a case for &quot;Either you trust Spring to do its job properly, or you don&#39;t.
+  If you don&#39;t - don&#39;t use Spring!&quot;</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-effective-di" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Effective DI</h5><h6>Prefer singleton Spring beans over static references</h6><pre><code class="lang-Java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DataSerializer</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ObjectMapper OBJECT_MAPPER = <span class="hljs-keyword">new</span> ObjectMapper()
+    ...
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">serialize</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> OBJECT_MAPPER
+          .writerWithDefaultPrettyPrinter().writeValueAsString(...)
+    }
+}
+</code></pre>
+<h6>BECOMES...</h6><aside class="notes"><ul>
+<li>Explain reasonable use of DI to avoid the statics mess</li>
+<li>Explain that it is perfectly OK for a Singleton component to
+manage its own internal structure</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-effective-di-02" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Effective DI</h5><pre><code class="lang-Java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JacksonConfiguration</span> </span>{
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ObjectMapper <span class="hljs-title">defaultMapper</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">final</span> ObjectMapper mapper = <span class="hljs-keyword">new</span> ObjectMapper()
+        mapper.enable(SerializationFeature.INDENT_OUTPUT)
+        <span class="hljs-keyword">return</span> mapper
+    }
+}
+</code></pre>
+<pre><code class="lang-Java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DataSerializer</span>  </span>{
+    <span class="hljs-keyword">private</span> ObjectMapper mapper
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DataSerializer</span><span class="hljs-params">(<span class="hljs-keyword">final</span> ObjectMapper mapper)</span> </span>{
+        <span class="hljs-keyword">this</span>.mapper = mapper
+    }
+}
+</code></pre><aside class="notes"><ul>
+<li>Advantages of this approach</li>
+<li>Configuration of a singleton can be conveniently centralized</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-application-structure" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Application structure</h5><ul>
+<li>Structure your code as services</li>
+<li>Keep services stateless where possible</li>
+</ul><aside class="notes"><ul>
+<li>DDD and some Spring practices don&#39;t always mix well</li>
+<li>Observing a consistent package structure is a good idea</li>
+<li>Prefer business logic in services to business logic in DTOs</li>
+<li>Pay attention to data flow between services</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-object-graph-composition" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Object Graph Composition</h5><ul>
+<li>Avoid implementing unnecessary interfaces in components</li>
+<li>Most components can be implemented as concrete classes</li>
+<li>General guideline: prefer composition over inheritance</li>
+</ul><aside class="notes"><ul>
+<li><p>Explain the example with multiple-interfaces-per-component implementation and
+injection of said individual interfaces into other components</p>
+</li>
+<li><p>Use interfaces only if there is more than one implementation of a component</p>
+</li>
+<li><p>Mention that Spring often also features deep class hierarchies
+(some of them historical) which strictly speaking violate the
+composition-over-inheritance principle</p>
+</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-basic-troubleshooting" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Troubleshooting</h5><h5>HELP!!!</h5><p><img src="images/looney_toons_taz.png" alt="Angry Taz" class="float-right" /></p>
+<ul>
+<li>Spring app context provides good error messages</li>
+<li>SpringBoot provides <em>even better</em> error messages</li>
+<li>Don&#39;t be afraid to debug <em>into</em> the framework code</li>
+<li>Be aware of &quot;cascading&quot; failures during DI</li>
+</ul><aside class="notes"><ul>
+<li>Explain some basic mistakes (e.g. injection of unknown / improperly configured dependencies)</li>
+<li>Explain a typical cascading failure in DI (i.e. cannot inject a dependency
+because something IN it cannot be properly initialized)</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-sources-of-trouble" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Typical sources of trouble</h5><ul>
+<li>Component not picked up by component scan</li>
+<li>Configuration classes not picked by component scan</li>
+<li>DI fails to find at least one compatible bean</li>
+<li>DI tries to inject dependency, finds multiple candidates</li>
+<li><code>@Value</code> cannot resolve a placeholder / incompatible data(type)</li>
+</ul><aside class="notes"><ul>
+<li>Explain how to check component scan parameters</li>
+<li>Explain how to resolve ambiguity in case of multiple DI candidates 
+(@Qualifier / @Primary)</li>
+<li>SpringBoot specific: explain how default component scan will only
+find stuff relative to the base application class&#39; package, so base
+application class should ideally reside in the top-level package</li>
+<li>Explain @Value specifics</li>
+<li>SpringBoot: explain default value pitfalls</li>
+</ul></aside>
+</section>
+
+<section id="general-practices-general-advice" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">04</h3></p>
+<h3>General practices</h3><h5>Tips</h5><ul>
+<li>App context initialization is debuggable</li>
+<li>Be aware of SpringAOP-enhanced classes (e.g. CGLIB proxies)</li>
+<li>Set up a local DEV mode for your application</li>
+</ul><aside class="notes"><ul>
+<li>Explain AOP pitfalls</li>
+<li>Debugging into Spring&#39;s internals takes patience</li>
+<li>Explain advantages of a local development mode</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-configuration" class="chapter">
+<section id="configuration-chapter-cover" class="slide" data-has-notes="false">
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>05</h1>
+<h2>Configuration</h2>
+</section>
+
+<section id="configuration-basics" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">05</h3></p>
+<h3>Configuration</h3><h5>Basics</h5><ul>
+<li>Learn various out-of-the-box annotations</li>
+<li>Use configuration classes</li>
+<li>Group related configuration into separate classes</li>
+<li>Do not repeat &quot;global&quot; configuration (e.g. @EnableScheduling)</li>
+</ul><aside class="notes"><ul>
+<li>Don&#39;t repeat &quot;global&quot; configuration<ul>
+<li>Helps reduce confusion</li>
+<li>Multiple occurrences of such annotations are generally ignored by the app context</li>
+</ul>
+</li>
+<li>Do <em>not</em> test config classes - this is downright silly!</li>
+<li>Core annotations are often meta-annotated and activate several things simultaneously</li>
+</ul></aside>
+</section>
+
+<section id="configuration-basics-02" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">05</h3></p>
+<h3>Configuration</h3><h5>Basics</h5><ul>
+<li>Use @Bean to explicitly define additional beans</li>
+<li>Config classes are &quot;usual&quot; Spring-managed beans</li>
+<li>Avoid mixing configuration and component code</li>
+<li>Do <em>not</em> expose individual config values as beans</li>
+<li>Do <em>not</em> annotate your own config classes with @AutoConfiguration</li>
+</ul><aside class="notes"><ul>
+<li>Keep in mind the bean factory&#39;s semantics<ul>
+<li>@Bean-annotated methods are proxied - calls to these will return cache instances if possible</li>
+</ul>
+</li>
+<li>&quot;usual&quot; spring Beans meaning:<ul>
+<li>Usual DI options works here as well</li>
+<li>Ditto for @Value</li>
+</ul>
+</li>
+<li>Avoid mixing configuration and component code<ul>
+<li>Configure stuff in separate classes</li>
+<li>Put all config classes into a separate package, e.g &quot;config&quot;</li>
+</ul>
+</li>
+<li>no @AutoConfiguration unless you are actually writing an auto-configurable extension library</li>
+</ul></aside>
+</section>
+
+<section id="configuration-yaml-files" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">05</h3></p>
+<h3>Configuration</h3><h5>YAML files</h5><ul>
+<li>Structure configuration files</li>
+<li>Document configuration</li>
+<li>Keep a consistent naming convention for properties</li>
+<li>Group related properties</li>
+<li>Use environment variable substitution where appropriate</li>
+</ul><aside class="notes"><ul>
+<li>Use comments to structure individual config sections</li>
+<li>Provide default values as necessary / where possible</li>
+<li>Explain default values</li>
+<li>defaults:  keep in mind that URLs and other strings containing &quot;:&quot; won&#39;t work here</li>
+<li>Tip: show how to separate logging configuration for DEV and PROD</li>
+</ul></aside>
+</section>
+
+<section id="configuration-code-example" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">05</h3></p>
+<h3>Configuration</h3><h5>Example</h5><pre><code class="lang-Java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleConfiguration</span> </span>{
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> SimpleService service
+
+    <span class="hljs-meta">@Value</span>
+    <span class="hljs-keyword">private</span> String appName
+
+    <span class="hljs-meta">@Bean</span>(<span class="hljs-string">"anotherService"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AnotherService <span class="hljs-title">anotherService</span><span class="hljs-params">()</span> </span>{ ... }
+
+    <span class="hljs-meta">@Bean</span>(<span class="hljs-string">"customService"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> YetAnotherService <span class="hljs-title">yetAnotherService</span><span class="hljs-params">()</span> </span>{ ... }
+}
+</code></pre><aside class="notes"><ul>
+<li>Explain bean naming (default and manual)</li>
+<li>Explain the importance of bean names</li>
+<li>Explain @Primary</li>
+<li>Explain effect of bean names on injection and @Qualifier</li>
+</ul></aside>
+</section>
+
+<section id="configuration-init-and-cleanup" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">05</h3></p>
+<h3>Configuration</h3><h5>Component initialization and cleanup</h5><ul>
+<li>Hooks for initialization and cleanup code</li>
+<li>Invoked automatically by the bean factory</li>
+<li>Prefer this to legacy InitializingBean and DisposableBean interfaces</li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-meta">@Component</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BadMoonService</span> </span>{
+
+    <span class="hljs-meta">@PostConstruct</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> </span>{ ... }
+
+    <span class="hljs-meta">@PreDestroy</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">cleanup</span><span class="hljs-params">()</span> </span>{ ... }
+}
+</code></pre><aside class="notes"><ul>
+<li>Explain how these methods can also be private -&gt; prevents exposure of implementation
+details into the component&#39;s API</li>
+<li>Example</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-value-conversion" class="chapter">
+<section id="value-conversion-chapter-cover" class="slide" data-has-notes="false">
+<br />
+<br />
+<br />
+<br />
+<h1>06</h1>
+<h2>Value conversion</h2>
+</section>
+
+<section id="value-conversion-conversion-service" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">06</h3></p>
+<h3>Value conversion</h3><h5>Conversion service</h5><ul>
+<li>A central ConversionService allows us to reduce boilerplate </li>
+</ul>
+<pre><code class="lang-yaml"><span class="hljs-string">config.fixed.ids</span> <span class="hljs-string">=</span> <span class="hljs-string">"1,3,45,65,89,112"</span>
+</code></pre>
+<pre><code class="lang-Java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ComplexService</span> </span>{
+    ...
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">"${config.fixed.ids}"</span>)
+    <span class="hljs-keyword">private</span> List&lt;Integer&gt; fixedIds
+}
+</code></pre>
+<pre><code class="lang-Java"><span class="hljs-meta">@RequestMapping</span>(...)
+<span class="hljs-function"><span class="hljs-keyword">public</span> UserAccount <span class="hljs-title">getUserAccount</span><span class="hljs-params">(@PathParam(<span class="hljs-string">"id"</span>)</span> Long id) </span>{...}
+</code></pre><aside class="notes"><ul>
+<li>Explain how the central ConversionService assists in transforming values</li>
+<li>Show an example of ConversionService custom converter integration</li>
+</ul></aside>
+</section>
+
+<section id="value-conversion-custom-conversion" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">06</h3></p>
+<h3>Value conversion</h3><h5>Custom value converters</h5><ul>
+<li>Define a conversion service bean </li>
+<li>Add custom converters to configuration</li>
+<li>Enjoy :-D</li>
+</ul><aside class="notes"><ul>
+<li>Explain why it is import not to abuse this facility</li>
+<li>Show an example of conversion service configuration</li>
+<li>Explain how the conversion service helps eliminate boilerplate code</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-mvc" class="chapter">
+<section id="mvc-chapter-cover" class="slide" data-has-notes="false">
+<br />
+<br />
+<br />
+<br />
+<h1>07</h1>
+<h2>Spring MVC</h2>
+</section>
+</section>
+
+<section id="chapter-testing" class="chapter">
+<section id="testing-chapter-cover" class="slide" data-has-notes="false">
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>08</h1>
+<h2>Testing</h2>
+</section>
+
+<section id="testing-basics" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Basics</h5><ul>
+<li>Special JUnit runner for creating an app context</li>
+<li>Tests become Spring beans - can use DI, configuration etc.</li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-meta">@RunWith</span>(SpringRunner.class)
+<span class="hljs-meta">@ContextConfiguration</span>(classes = TestContext.class)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountServiceTest</span> </span>{
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> AccountRepository accountRepository
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">"${config.test.id}"</span>)
+    <span class="hljs-keyword">private</span> Integer testId
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testLoad</span><span class="hljs-params">()</span> </span>{...}
+}
+</code></pre><aside class="notes"><ul>
+<li>Show an example of Spring-enabled test</li>
+<li>Explain difference to @SpringBootTest - what are the specifics?</li>
+<li>Not limited to JUnit - Groovy / Spock work well, too</li>
+</ul></aside>
+</section>
+
+<section id="testing-partial-app-contexts" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Partial application contexts</h5><ul>
+<li>Useful for isolating component tests</li>
+<li>Useful for avoiding full app initialization</li>
+<li>Can improve test execution performance</li>
+</ul>
+<pre><code class="lang-Groovy"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-comment">//@SpringBootApplication</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestContext</span> {</span> ... }
+</code></pre>
+<pre><code class="lang-Groovy"><span class="hljs-meta">@RunWith</span>(SpringRunner.<span class="hljs-keyword">class</span>)
+<span class="hljs-meta">@ContextConfiguration</span>(classes = TestContext.<span class="hljs-keyword">class</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomComponentTest</span> {</span> ... }
+</code></pre>
+<pre><code class="lang-Groovy"><span class="hljs-meta">@SpringBootTest</span>(classes = TestContext.<span class="hljs-keyword">class</span>)
+<span class="hljs-meta">@ContextConfiguration</span> <span class="hljs-comment">// don't forget this!</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomComponentTest</span> {</span> ... }
+</code></pre><aside class="notes"><ul>
+<li>Explain advantages of partial context w.r.t to problematic init of PROD-only code</li>
+<li>Show an example of a partial test context (i.e. in EbonService)</li>
+<li>Show how to use</li>
+<li>Explain pros/cons</li>
+</ul></aside>
+</section>
+
+<section id="testing-partial-app-contexts-02" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Partial application contexts</h5><p>A test can be its own application context!</p>
+<pre><code class="lang-Groovy"><span class="hljs-meta">@ContextConfiguration</span>
+<span class="hljs-meta">@SpringBootTest</span>(classes = SelfContainedTest.<span class="hljs-keyword">class</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SelfContainedTest</span> {</span>
+
+    <span class="hljs-meta">@Bean</span>
+    UserDataRepository repository() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> UserDataRepository()
+    }
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserDataRepository testSubject
+
+    <span class="hljs-keyword">def</span> <span class="hljs-string">"Test repository operations"</span> () { ... }
+}
+</code></pre><aside class="notes"><ul>
+<li>Explain how a test can bootstrap its own configuration</li>
+<li>Show an example of a self-contained test</li>
+</ul></aside>
+</section>
+
+<section id="testing-bean-mocks" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Spring Boot bean mocks</h5><ul>
+<li>SpringBoot provides a convenient <code>@MockBean</code> annotation</li>
+<li>Mocks replace already declared beans in an app context</li>
+<li>Can still specify mock behavior if desired</li>
+<li>Can be used to selectively &quot;disable&quot; specific components</li>
+</ul>
+<pre><code class="lang-Groovy"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestConfiguration</span> {</span>
+
+    <span class="hljs-meta">@MockBean</span>
+    <span class="hljs-keyword">private</span> RssClient rssClient <span class="hljs-comment">//replaces the "real" RSS client</span>
+}
+</code></pre><aside class="notes"><ul>
+<li>Explain basic usage</li>
+<li>Explain how this can be used to &quot;unit test&quot; a component while still using DI</li>
+<li>Explain how this can be used to e.g. deal with problematic but irrelevant PROD code</li>
+</ul></aside>
+</section>
+
+<section id="testing-unit-tests" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Unit tests</h5><ul>
+<li>Java -&gt; Use Mockito <code>@Mock</code> and <code>@InjectMocks</code> mechanisms</li>
+<li>If using constructor injection, can provide mocks explicitly</li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConfusedOrk</span> </span>{  
+    <span class="hljs-meta">@Autowired</span> <span class="hljs-keyword">private</span> Gork gork
+    <span class="hljs-meta">@Autowired</span> <span class="hljs-keyword">private</span> Mork mork
+}
+</code></pre>
+<pre><code class="lang-Java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConfusedOrkTest</span> </span>{
+    <span class="hljs-meta">@Mock</span>
+    <span class="hljs-keyword">private</span> Gork gork
+    <span class="hljs-meta">@Mock</span>
+    <span class="hljs-keyword">private</span> Mork mork
+
+    <span class="hljs-meta">@InjectMocks</span>
+    <span class="hljs-keyword">private</span> ConfusedOrk ork = <span class="hljs-keyword">new</span> ConfusedOrk()
+}
+</code></pre><aside class="notes"><ul>
+<li>Explain basic usage and show examples</li>
+<li>(Touch on constructor injection issues here? or later?)</li>
+</ul></aside>
+</section>
+
+<section id="testing-unit-test-alternatives" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Alternatives to unit testing</h5><ul>
+<li>Use Spring tests with minimal app contexts instead</li>
+<li>Only marginally slower than &quot;real&quot; unit tests</li>
+<li>Does not significantly diminish the quality of the tests</li>
+<li>DI still works, so we don&#39;t have to simulate it</li>
+<li>Best of both worlds: mock DI dependencies before injection</li>
+</ul><aside class="notes"><ul>
+<li>Explain how retaining the DI capabilities simplifies test development</li>
+<li>Explain how careful configuration can help approach the controlled 
+conditions of a &quot;real&quot; unit test</li>
+<li>Explain why this alternative approach does not significantly detract
+from the quality of the tests</li>
+</ul></aside>
+</section>
+
+<section id="testing-test-configuration" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Configuration</h5><ul>
+<li>Use separate configuration for tests</li>
+<li>SpringBoot supports a separate application.yml out-of-the-box</li>
+<li>Can provide additional configuration classes if desired</li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-meta">@ContextConfiguration</span>
+<span class="hljs-meta">@SpringBootTest</span>(classes = {
+    TestConfiguration.class,
+    CustomConfiguration.class,
+    ExtraConfiguration.class
+})
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomConfiguredTest</span> </span>{
+
+}
+</code></pre><aside class="notes"><ul>
+<li>Show an example</li>
+<li>Explain custom helper classes and alternative component 
+implementations created specifically for testing</li>
+</ul></aside>
+</section>
+
+<section id="testing-tests-as-sandbox" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">08</h3></p>
+<h3>Testing</h3><h5>Tests as an R&amp;D laboratory</h5><ul>
+<li>Use Spring-enabled tests as playground for code fragments</li>
+<li>Explore various Spring facilities and components</li>
+<li>Test application contexts for correct configuration / composition</li>
+<li>Explore component behavior (e.g in multi-threaded environment)</li>
+</ul><aside class="notes"><ul>
+<li>Explain how a Spring-enabled test can be used as a simple
+experimental lab setup for playing around with Spring code</li>
+<li>Advantages: quick setup/teardown, separate isolated configuration,
+no need to modify productive code</li>
+<li>Explain how to test app context initialization
+(possibly using a separate configuration)</li>
+</ul></aside>
+</section>
+</section>
+
+<section id="chapter-application-profiles" class="chapter">
+<section id="application-profiles-chapter-cover" class="slide" data-has-notes="false">
+<br />
+<br />
+<br />
+<br />
+<h1>09</h1>
+<h2>Application profiles</h2>
+</section>
+
+<section id="application-profiles-application-init" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">09</h3></p>
+<h3>Application profiles</h3><h5>Profile-dependent context initialization</h5><ul>
+<li>Annotation-driven application profiles</li>
+<li>Names correspond to those in application.yml</li>
+<li>Use -Dspring.profiles.active=[profiles] to switch profiles </li>
+</ul>
+<pre><code class="lang-Java"><span class="hljs-meta">@Profile</span>(<span class="hljs-string">"prod"</span>)
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProdOnlyComponent</span> </span>{ ... }
+
+<span class="hljs-meta">@Profile</span>(<span class="hljs-string">"dev"</span>)
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DevOnlyComponent</span> </span>{ ... }
+
+</code></pre><aside class="notes"><ul>
+<li>Explain profiles</li>
+<li>Explain default profile</li>
+<li>Explain use case for local development</li>
+</ul></aside>
+</section>
+
+<section id="application-profiles-profiles-yaml" class="slide" data-has-notes="true">
+<p><h3 class="chapter-number">09</h3></p>
+<h3>Application profiles</h3><h5>YAML Configuration</h5><p>Use the &quot;---&quot; YAML document delimiter to specify multiple application profiles</p>
+<pre><code class="lang-yaml"><span class="hljs-comment">### Common configuration ###</span>
+<span class="hljs-string">spring.profiles.active:</span> <span class="hljs-string">prod</span>
+<span class="hljs-string">request.timeout:</span> <span class="hljs-number">1000</span>
+
+<span class="hljs-meta">---</span>
+<span class="hljs-comment">### Specific production profile configuration ###</span>
+<span class="hljs-string">spring.profiles:</span> <span class="hljs-string">prod</span>
+<span class="hljs-string">request.timeout:</span> <span class="hljs-string">${GLOBAL_REQUEST_TIMEOUT:100}</span>
+
+<span class="hljs-meta">---</span>
+<span class="hljs-comment">### Specific development profile configuration ###</span>
+<span class="hljs-string">spring.profiles:</span> <span class="hljs-string">dev</span>
+<span class="hljs-string">request.timeout:</span> <span class="hljs-number">5000</span>
+</code></pre><aside class="notes"><ul>
+<li>Explain advantages for local development</li>
+<li>Show an example in code</li>
+</ul></aside>
+</section>
+</section></div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: Reveal.getQueryHash().transition || 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+        //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
+    </script>
+
+    <script src="js/dynamic-theme.js"></script><script src="js/such-notes-print.js"></script><script src="js/custom.js"></script>
+
+  </body>
+</html>
